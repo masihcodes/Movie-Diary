@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dracula">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script defer type="module" src="./main.js"></script>
+</head>
+
+<body>
+    <nav class="navbar w-[95%] sticky left-0 right-0 mx-auto top-10 opacity-90 z-10 bg-base-300 shadow-sm rounded-md">
+        <div class="navbar-start gap-1">
+            <span>
+                <span class="text-rotate">
+                    <span>
+                        <span class="bg-teal-400 px-2"><i class="fa-solid fa-film"></i></span>
+                        <span class="bg-red-400 px-2"><i class="fa-solid fa-video"></i></span>
+                        <span class="bg-blue-400 px-2"><i class="fa-regular fa-circle-play"></i></span>
+                    </span>
+                </span>
+                <span class="font-extrabold">Movie Diary</span>
+            </span>
+        </div>
+        <div class="navbar-center" class="tabs tabs-lift">
+            <a href="index.html" role="tab"
+                class="tab tab-active font-extrabold border-b-4 border-primary pb-1">Home</a>
+            <a href="journal.html" role="tab" class="tab pb-1">Journal</a>
+        </div>
+        <div class="navbar-end gap-2">
+            <input id="search-input" type="text" placeholder="Search"
+                class="input input-bordered w-24 md:w-auto rounded-md" />
+            <button id="searchBtn" class="btn btn-primary rounded-md">Search</button>
+        </div>
+    </nav>
+
+
+    <h1 class="text-center font-extrabold text-accent text-5xl mb-10 mt-30">
+        Popular Movies This Week
+    </h1>
+
+    <section id="card" class="flex flex-wrap justify-between mx-auto gap-x-6 gap-y-10 p-6 rounded-2xl"></section>
+
+    <div class="flex justify-center items-center mt-10 mb-15">
+        <div class="join">
+            <button class="join-item btn btn-primary">«</button>
+            <button class="join-item btn">Page 1</button>
+            <button class="join-item btn btn-secondary">»</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
